@@ -1,0 +1,47 @@
+#root {
+  height: 100%;
+}
+.tabar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+}
+.tabar div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: coral;
+}
+.wrapper {
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+}
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100px;
+  width: 100%;
+  display: flex
+}
+.content {
+  flex-shrink: 0;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid black;
+  height: 80px;
+  background-color: blue;
+}
+.about {
+  height: 100%;
+  background-color: crimson;
+}

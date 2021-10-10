@@ -12,6 +12,7 @@ interface IProps {
   onClose: Close,
   close: boolean,
   children: React.ReactNode,
+  
 }
 
 const Popup:React.FC<IProps> = (props) => {
