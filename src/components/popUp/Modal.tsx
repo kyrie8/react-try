@@ -12,7 +12,7 @@ import {Mask} from './modalStyle'
 
 interface IProps {
   onCancel: () => void;
-  visible: Boolean;
+  visible: boolean;
   children: React.ReactNode
 }
 

@@ -1,0 +1,42 @@
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: dimgray;
+}
+.card-appear, .card-exit-done {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  /* transition: transform 1s linear; */
+}
+.card-appear-active {
+  top: 60%; /* 根据传入的height动态设置高度 */
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: top 2s linear
+}
+.card-appear-done {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+.card-exit {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+
+.card-exit-active {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: top 2s linear /* ui库应该要获取到用户传入的时间动态设置 */
+}
+.card-exit-done {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%)
+}

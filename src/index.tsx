@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import {HashRouter} from 'react-router-dom'
 
+import Store from './store'
+
 ReactDOM.render(
+  <Store.Provider>
   <HashRouter>
     <App />
-  </HashRouter>,
+  </HashRouter>
+  </Store.Provider>,
   document.getElementById('root')
 );
 
